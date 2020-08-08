@@ -39,7 +39,7 @@ class MailController extends Controller
         }
 
         Mail::to($request->email)->send(new DemoEmail($data));
-        return back()->with('success', 'mail send successful');
+        return back()->with('success', 'mail send successful123');
 
     }
 }
